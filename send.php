@@ -12,6 +12,7 @@ $arquivo = 'test.txt'; //arquivo de texto do tipo txt q será usado
 $texto = $_POST['text']."<br>";// inclui as conversas do chat
 $fp = fopen($arquivo, 'a+');// escreve o arquivo (caso não exista ele cria)
 
+//execução da escrita /biblioteca fopen
 fwrite($fp, $texto);
 fclose($fp);
 
